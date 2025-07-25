@@ -1,0 +1,34 @@
+*.class 
+*.log 
+bin/ 
+out/ 
+*.jar 
+*.iml 
+.idea/ 
+.vscode/ 
+# Compiled class files
+*.class
+
+# IDE folders
+.idea/
+.vscode/
+*.iml
+
+# Build folders
+bin/
+out/
+build/
+
+# Logs
+*.log
+
+# Packages
+*.jar
+*.war
+*.ear
+
+# Temporary/backup files
+*.tmp
+*.bak
+*~
+
