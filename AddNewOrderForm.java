@@ -309,30 +309,6 @@ public class AddNewOrderForm extends JFrame {
 					System.out.println("User closed the dialog");
 				}
 				
-				//--
-				
-				
-				//String OrderId = orderIdField.getText();
-				//String customerId = customerIdField.getText();
-				//String customerName = customerNameField.getText();
-				//String orderQuantity = burgerQtyField.getText();
-				//try{
-				//	FileWriter fw = new FileWriter("Burger.txt",true);
-				//	fw.write(OrderId+","+customerId+","+customerName+","+orderQuantity+","+burger.getOrderStatus(1)+"\n");
-				//	fw.close();
-				//	JOptionPane.showMessageDialog(null,"Order Added Success");
-				//	orderIdField.setText(generateOrderId());
-				//	customerIdField.setText("");
-				//	customerNameField.setText("");
-				//	burgerQtyField.setText("");
-				//	orderStatusField.setText("");
-				//	netTotalField.setText("");
-				//	customerIdField.requestFocus();
-				//	
-				//}catch(IOException ex){
-				//	ex.printStackTrace();
-				//	
-				//}
 			}
 		});
         
@@ -385,12 +361,7 @@ public class AddNewOrderForm extends JFrame {
 			if(line!=null && customerId.equalsIgnoreCase(line.substring(6,16))){
 				String[] foundOne = line.split(",");
 				return foundOne;
-				//int orderQuantity = Integer.parseInt(foundOne[3]);
-				//int orderStatus = Integer.parseInt(foundOne[4]);
-				//foundOne[3] = orderQuantity;
-				//foundOne[4] = orderStatus;
-				//Burger foundCustomer = new Burger(foundOne[0],foundOne[1],foundOne[2],Integer.parseInt(foundOne[3]),Integer.parseInt(foundOne[4]));
-				//return foundCustomer;
+				
 			}else{
 				return null;
 			}
@@ -401,17 +372,6 @@ public class AddNewOrderForm extends JFrame {
 	}
     
     public static void main(String[] args) {
-        //SwingUtilities.invokeLater(() -> {
-        //    try {
-        //        // Set look and feel to system default
-        //        //UIManager.setLookAndFeel(UIManager.getSystemLookAndFeel());
-        //    } catch (Exception e) {
-        //        e.printStackTrace();
-        //    }
-        //    
-        //    // Create and show the form
-        //    AddNewOrderForm form = new AddNewOrderForm();
-        //    form.setVisible(true);
-        //});
+    
     }
 }
