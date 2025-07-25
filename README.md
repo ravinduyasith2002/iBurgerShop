@@ -15,19 +15,19 @@
 - 👤 **Search Customer Details**  
   Retrieve orders made by a specific customer.
 
-- ## 🔍 View Orders Feature
+- 🔍 **View Orders Feature**
 
-Users can now view and filter orders by their status:
-- ❌ Canceled Orders
-- 🛠️ Preparing Orders
-- ✅ Delivered Orders
+  Users can now view and filter orders by their status:
+  - ❌ Canceled Orders
+  - 🛠️ Preparing Orders
+  - ✅ Delivered Orders
 
-Each order displays:
-- Order ID
-- Customer ID
-- Customer Name
-- Order Quantity
-- Total Price (calculated automatically)
+  Each order displays:
+  - Order ID
+  - Customer ID
+  - Customer Name
+  - Order Quantity
+  - Total Price (calculated automatically)
 
 - ✏️ **Update Orders**  
   Modify order details including **quantity** and **status**.
