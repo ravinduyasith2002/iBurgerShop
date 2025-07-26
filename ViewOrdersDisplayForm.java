@@ -14,7 +14,7 @@ import java.util.*;
 import java.io.*;
 
 
-public class ViewDeliveredOrderDetailsForm extends JFrame {
+public class ViewOrdersDisplayForm extends JFrame {
 	Burger burger;
 
     // Declare all components
@@ -27,7 +27,7 @@ public class ViewDeliveredOrderDetailsForm extends JFrame {
     private JButton backButton;
     private JLabel watermarkLabel; // For "@Ravindu Yasith"
 
-    public ViewDeliveredOrderDetailsForm(int orderType) {
+    public ViewOrdersDisplayForm(int orderType) {
 		burger = new Burger();
         // Set up the main frame
         String title = (orderType==0)?"Canceled":(orderType==1)?"Preparing":(orderType==2)?"Delivered":"Invalid !";
@@ -216,7 +216,7 @@ public class ViewDeliveredOrderDetailsForm extends JFrame {
 
         addBackButtonListener(e -> {
             new ViewOrderForm().setVisible(true);
-            ViewDeliveredOrderDetailsForm.this.dispose();
+            ViewOrdersDisplayForm.this.dispose();
         });
     }
 

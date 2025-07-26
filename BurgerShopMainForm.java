@@ -68,6 +68,12 @@ public class BurgerShopMainForm extends JFrame {
         rightPanel.add(btnViewOrders);
 
         btnUpdateOrderDetails = createRoundedButton("Update Order Details", 270);
+        btnUpdateOrderDetails.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent evt){
+				BurgerShopMainForm.this.setVisible(false);
+				new UpdateOrderForm().setVisible(true);
+			}
+		});
         rightPanel.add(btnUpdateOrderDetails);
 
         btnExit = createRoundedButton("Exit", 390);

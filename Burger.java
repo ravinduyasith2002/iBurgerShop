@@ -43,8 +43,14 @@ public class Burger{
 		return (orderType==0)?"Canceled":(orderType==1)?"Processing":(orderType==2)?"Delivered":null;
 	}
 	
+	public int getOrderStatusNumber(String orderType){
+		return (orderType.equalsIgnoreCase("Canceled"))?0:(orderType.equalsIgnoreCase("Processing"))?1:(orderType.equalsIgnoreCase("Delivered"))?2:-1;
+	}
+	
+	
+	
 	public String toString(){
-		return orderId+","+customerId+","+customerName+","+Integer.toString(orderQuantity)+","+orderStatus;
+		return orderId+","+customerId+","+customerName+","+Integer.toString(orderQuantity)+","+Integer.toString(orderStatus);
 	}
 	
 	public double getBurgerPrice(){

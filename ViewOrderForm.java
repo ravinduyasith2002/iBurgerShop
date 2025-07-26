@@ -265,17 +265,17 @@ public class ViewOrderForm extends JFrame {
         add(rightPanel);
 
         addCanceledOrdersButtonListener(e -> {
-            new ViewDeliveredOrderDetailsForm(canceledOrdersOption).setVisible(true);
+            new ViewOrdersDisplayForm(canceledOrdersOption).setVisible(true);
             ViewOrderForm.this.dispose();
         });
 
         addPreparingOrdersButtonListener(e -> {
-            new ViewDeliveredOrderDetailsForm(PreparingOrdersOption).setVisible(true);
+            new ViewOrdersDisplayForm(PreparingOrdersOption).setVisible(true);
             ViewOrderForm.this.dispose();
         });
 		
         addDeliveredOrdersButtonListener(e -> {
-            new ViewDeliveredOrderDetailsForm(deliveredOrdersOption).setVisible(true);
+            new ViewOrdersDisplayForm(deliveredOrdersOption).setVisible(true);
             ViewOrderForm.this.dispose();
         });
 
